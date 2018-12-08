@@ -8,13 +8,33 @@ The AlarmManager class allows deveopers to schedule tasks if the application nee
 # History
 The AlarmManager class has been in the API for since **Level 1** and has always been a core functionality. The AlarmManager is included in the java.lang.Object library resolidiying its importance in the android API.
 
-# Major methods/attributes
-The core fuctionality centers around one method called **onReceive()** and can be trigged under multiple conditions/parametrs.
-
 # Getting Going
 By doding this tutotrial I will be a assuming a few things.
 - Know basic java and Android Studio
 - Understand how to use GitHub
+- Use Android Toast
+- Basic Activies and Layouts
+
+# Major methods/attributes
+The core fuctionality centers around one method called **onReceive()** and can be trigged under multiple conditions/parametrs.
+
+**public void onReceive(Context context, Intent intent)**
+- This function is the one that is called when the alrm triggers. This is where you will set your sounds to go off or anything you desire
+
+**calendar.set(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH alarmTime.getHour() alarmTime.getMinute(), 0);**
+- This object creates the time data for when we want the alarm to activate
+- We pull the target time from the DatePicker object
+
+**PendingIntent pi = PendingIntent.getBroadcast(this, 0, i, 0);**
+- Pending intents are necessary for when we have scheduled events
+
+**AlarmManager am = (AlarmManager) getSystemService(Context.ALARM_SERVICE);**
+- This is the actual AlarmManager object that we are using to create the alarm
+
+**am.setExact(RTC_WAKEUP, time, pi);**
+- This method set the time our alarm will go off
+- We pass this method a version of our calaender that compatible 
+- It will send us to the Reviever once that time is reached
 
 # Setting up layout and buttons
 To set an alarm, we will need to input a specific time for the alarm to go off and a button to set it.
