@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AlarmManagerDemo</string>
+    <string name="alrmMsg">Alarm is set</string>
+    <string name="alMsg">ALARM AcTIVATED</string>
+</resources>
