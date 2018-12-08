@@ -65,7 +65,6 @@ Then decide what to do when the alarm is activated. For simplicity, I just send 
 This repository contains all the source code and associated files needed to create this application.
 The following examaple project will guide you through setting up your first AlarmManager functionality in a basic application.
 
-# Code
 
 # Reference
 https://developer.android.com/reference/android/app/AlarmManager
