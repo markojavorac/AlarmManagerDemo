@@ -3,7 +3,7 @@
 ### For: CENG-319
 
 # Intro
-The AlarmManager class allows developers to schedule tasks if the application needs to run at a specific time. The time window even includes times when the application is not even running. This allows for some unique functionality that can be implemented across a variety applications
+The AlarmManager Widget allows developers to schedule tasks if the application needs to run at a specific time. The time window even includes times when the application is not even running. This allows for some unique functionality that can be implemented across a variety applications
 
 # History
 The AlarmManager class has been in the API for since **Level 1** and has always been a core functionality. The AlarmManager is included in the java.lang.Object library re-solidifying its importance in the android API.
